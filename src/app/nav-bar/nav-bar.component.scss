@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  background: linear-gradient(to right, #ff8c00, #ff6f00);
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+
+  .title {
+    font-size: 3rem;
+    margin: 0 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .city-input {
+    width: 55%;
+    max-width: 900px;
+    height: 4rem;
+    padding: 1rem;
+    margin: auto;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    background: #fff;
+    color: #333;
+    text-align: center;
+
+    &::placeholder {
+      color: #bbb;
+    }
+  }
+}
