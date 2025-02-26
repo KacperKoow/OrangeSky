@@ -1,0 +1,39 @@
+.locatin-weather-container {
+  height: 80vh;
+  border: 20px solid;
+  border-radius: 100px;
+  border-color: #ff8c00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0.5vw 0.5vw 1.5vw rgba(0, 0, 0, 0.2); // Cień zależny od szerokości ekranu
+  font-family: "Raleway", sans-serif;
+}
+
+.city-name {
+  font-size: 4rem; // Duży nagłówek, ale zależny od ustawień przeglądarki
+  font-weight: bold;
+  color: #ff8c00;
+  margin-bottom: 1vh;
+}
+
+.weather-icon {
+  width: 20vw; // Ikona 20% szerokości ekranu
+  max-width: 200px; // Maksymalny rozmiar
+  height: auto;
+  fill: #ff8c00;
+}
+
+.weather-details {
+  font-size: 2rem; // Czytelna czcionka, dostosowana do root font-size
+  color: #333;
+  line-height: 1.6;
+
+  span {
+    font-weight: bold;
+    color: #222;
+  }
+}
