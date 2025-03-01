@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
+
+import { WeatherService } from '../weather.service';
 
 @Component({
   selector: 'app-location-weather',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
   templateUrl: './location-weather.component.html',
   styleUrl: './location-weather.component.scss',
 })
-export class LocationWeatherComponent {}
+export class LocationWeatherComponent {
+  constructor(private weatherService: WeatherService) {}
+
+  get weatherData() {
+    return this.weatherService.weatherData;
+  }
+}

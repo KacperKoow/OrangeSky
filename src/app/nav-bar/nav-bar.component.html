@@ -1,4 +1,11 @@
 <header class="navbar">
   <h1 class="title">OrangeSky</h1>
-  <input type="text" placeholder="Wpisz miasto..." class="city-input" />
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Wpisz miasto..."
+      name="location"
+      [(ngModel)]="enteredLocation"
+    />
+  </form>
 </header>
