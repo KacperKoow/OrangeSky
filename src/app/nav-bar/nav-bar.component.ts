@@ -12,10 +12,13 @@ import { WeatherService } from '../weather.service';
 })
 export class NavBarComponent {
   enteredLocation = '';
+  weatherData: any = null; // Dane do przekazania do location-weather
 
   constructor(private weatherService: WeatherService) {}
 
   onSubmit() {
-    this.weatherService.colcectWeatherData(this.enteredLocation);
+    if (this.enteredLocation.trim()) {
+      this.weatherService.getWeatherData(this.enteredLocation).subscribe();
+    }
   }
 }

@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.6rem;
   background: linear-gradient(to right, #ff8c00, #ff6f00);
   color: #fff;
@@ -27,10 +28,31 @@
       border: none;
       outline: none;
       color: #333;
+      width: 100%;
+      text-align: center;
 
       &::placeholder {
         color: #bbb;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 80%;
+    height: 3.5rem;
   }
 }

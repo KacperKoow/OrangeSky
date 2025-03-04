@@ -1,16 +1,36 @@
-<div class="locatin-weather-container">
-  <h2 class="city-name">{{ weatherData?.city }}</h2>
+@if (weatherData) {
+<div class="location-weather-container">
+  <div class="left-section">
+    <h2 class="city-name">{{ weatherData.name }}</h2>
+    <p class="weather-description">{{ weatherData.weather[0].description }}</p>
+    <p class="temperature">{{ weatherData.main.temp | number : "1.0-0" }}°C</p>
+  </div>
 
-  <img src="sunny-outline.svg" alt="weather icon" class="weather-icon" />
-  <div class="weather-details">
+  <div class="right-section">
     <p>
-      🌡️ Temperatura: <span>{{ weatherData?.temperature }} °C</span>
+      <strong>Feels Like:</strong>
+      {{ weatherData.main.feels_like | number : "1.0-0" }}°C
     </p>
     <p>
-      💨 Wiatr: <span>{{ weatherData?.windSpeed }} km/h</span>
+      <strong>Min Temperature:</strong>
+      {{ weatherData.main.temp_min | number : "1.0-0" }}°C
     </p>
     <p>
-      💧 Wilgotność: <span>{{ weatherData?.humidity }} %</span>
+      <strong>Max Temperature:</strong>
+      {{ weatherData.main.temp_max | number : "1.0-0" }}°C
+    </p>
+    <p><strong>Pressure:</strong> {{ weatherData.main.pressure }} hPa</p>
+    <p><strong>Humidity:</strong> {{ weatherData.main.humidity }}%</p>
+    <p>
+      <strong>Visibility:</strong>
+      {{ weatherData.visibility / 1000 | number : "1.0-0" }} km
+    </p>
+    <p>
+      <strong>Wind Speed:</strong>
+      {{ weatherData.wind.speed | number : "1.0-0" }} km/h
     </p>
   </div>
 </div>
+} @else {
+<p class="no-city-message">Please enter the city name in the navigation bar</p>
+}

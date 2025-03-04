@@ -1,39 +1,84 @@
-.locatin-weather-container {
+.location-weather-container {
   height: 80vh;
-  border: 20px solid;
-  border-radius: 100px;
-  border-color: #ff8c00;
+  max-width: 90vw;
+  border: 10px solid #ff8c00;
+  border-radius: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0.5vw 0.5vw 1.5vw rgba(0, 0, 0, 0.2); // Cień zależny od szerokości ekranu
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   font-family: "Raleway", sans-serif;
-}
+  padding: 3rem;
+  overflow: hidden;
+  flex-wrap: wrap;
 
-.city-name {
-  font-size: 4rem; // Duży nagłówek, ale zależny od ustawień przeglądarki
-  font-weight: bold;
-  color: #ff8c00;
-  margin-bottom: 1vh;
-}
-
-.weather-icon {
-  width: 20vw; // Ikona 20% szerokości ekranu
-  max-width: 200px; // Maksymalny rozmiar
-  height: auto;
-  fill: #ff8c00;
-}
-
-.weather-details {
-  font-size: 2rem; // Czytelna czcionka, dostosowana do root font-size
-  color: #333;
-  line-height: 1.6;
-
-  span {
-    font-weight: bold;
-    color: #222;
+  .left-section,
+  .right-section {
+    flex: 1;
+    padding: 3rem;
+    min-width: 350px;
   }
+
+  .left-section {
+    text-align: center;
+
+    .city-name {
+      font-size: clamp(4rem, 7vw, 6rem); // Większa nazwa miasta
+      font-weight: bold;
+      color: #ff8c00;
+    }
+
+    .temperature {
+      font-size: clamp(5rem, 9vw, 7rem); // Jeszcze większa temperatura
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #222;
+    }
+
+    .weather-description {
+      font-size: clamp(2rem, 4vw, 3rem); // Większy opis pogody
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .right-section {
+    text-align: left;
+    font-size: clamp(
+      1.5rem,
+      3vw,
+      2.2rem
+    ); // Większa czcionka dla szczegółowych danych
+    color: #333;
+
+    p {
+      margin: 1rem 0;
+      strong {
+        color: #222;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .right-section {
+      text-align: center;
+    }
+  }
+}
+
+.no-city-message {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3.5rem); // Jeszcze większy napis
+  font-weight: bold;
+  color: #333;
+  padding: 6rem;
+  font-family: "Raleway", sans-serif;
 }
