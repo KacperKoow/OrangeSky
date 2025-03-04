@@ -1,27 +1,48 @@
 # OrangeSky
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+## Description
 
-## Development server
+OrangeSky is a weather application that allows users to check the current weather of any city. The app fetches weather data from the [OpenWeatherMap API](https://openweathermap.org/) and displays it in a user-friendly interface. Currently, the application shows the current weather, including temperature, humidity, wind speed, and other relevant data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of contents
 
-## Code scaffolding
+- [Installation](#instalation)
+- [Technologies](#technologies)
+- [How it works](#how-it-works)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Go to the [OpenWeatherMap website](https://openweathermap.org/).
+Create an account.
+Under your username, you will find the "My API Keys" section. Go to it and then copy the key.
+Create the path `src/environments` and then create the `environment.ts` file inside it.
+In this file, paste the following code and replace 'YOUR_API_KEY_HERE' with your copied API key:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+export const environment = {
+  production: false,
+  apiKey: 'YOUR_API_KEY_HERE', // Replace with your actual API key
+};
+```
 
-## Running unit tests
+Run the following command to install all necessary dependencies:
+$ npm install
+After the installation is complete, start the development server by running:
+$ npm start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies
 
-## Running end-to-end tests
+Project is created with:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+-Angular version: 18.2.11
+-RxJS version: 7.5.0
+-TypeScript version: 4.8.4
+-Node.js version: 16.9.1
+-npm version: 7.24.0
 
-## Further help
+## How it works
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+-User Input: Enter a city name in the navigation bar.
+-Fetching Data: The app makes a request to the weather API using the provided API key and fetches weather details for the city.
+-Displaying Data: Weather information like temperature, weather description, wind speed, and humidity is displayed in a responsive layout.
+-Responsive Design: The layout adapts to screen size, stacking sections on smaller devices.
