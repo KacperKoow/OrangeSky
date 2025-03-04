@@ -12,7 +12,7 @@ import { WeatherService } from '../weather.service';
 })
 export class NavBarComponent {
   enteredLocation = '';
-  weatherData: any = null; // Dane do przekazania do location-weather
+  weatherData: any = null;
 
   constructor(private weatherService: WeatherService) {}
 

@@ -34,11 +34,11 @@ $ npm start
 
 Project is created with:
 
--Angular version: 18.2.11
--RxJS version: 7.5.0
--TypeScript version: 4.8.4
--Node.js version: 16.9.1
--npm version: 7.24.0
+- Angular version: 18.2.11\_
+- RxJS version: 7.5.0\_
+- TypeScript version: 4.8.4\_
+- Node.js version: 16.9.1
+- npm version: 7.24.0\_
 
 ## How it works
 

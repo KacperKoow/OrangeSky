@@ -26,20 +26,20 @@
     text-align: center;
 
     .city-name {
-      font-size: clamp(4rem, 7vw, 6rem); // Większa nazwa miasta
+      font-size: clamp(4rem, 7vw, 6rem);
       font-weight: bold;
       color: #ff8c00;
     }
 
     .temperature {
-      font-size: clamp(5rem, 9vw, 7rem); // Jeszcze większa temperatura
+      font-size: clamp(5rem, 9vw, 7rem);
       font-weight: bold;
       margin: 1rem 0;
       color: #222;
     }
 
     .weather-description {
-      font-size: clamp(2rem, 4vw, 3rem); // Większy opis pogody
+      font-size: clamp(2rem, 4vw, 3rem);
       font-weight: bold;
       color: #222;
       margin-bottom: 1rem;
@@ -48,11 +48,7 @@
 
   .right-section {
     text-align: left;
-    font-size: clamp(
-      1.5rem,
-      3vw,
-      2.2rem
-    ); // Większa czcionka dla szczegółowych danych
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
     color: #333;
 
     p {
@@ -76,7 +72,6 @@
 
 .no-city-message {
   text-align: center;
-  font-size: clamp(2.5rem, 5vw, 3.5rem); // Jeszcze większy napis
   font-weight: bold;
   color: #333;
   padding: 6rem;
