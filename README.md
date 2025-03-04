@@ -45,5 +45,5 @@ Project is created with:
 -User Input: Enter a city name in the navigation bar.\
 -Fetching Data: The app makes a request to the weather API using the provided API key and fetches weather details for the city.\
 -Displaying Data: Weather information like temperature, weather description, wind speed, and humidity is displayed in a responsive layout.\
-(UIexamples/UI.png)
+![Alt text](UIexamples/UI.png)
 -Responsive Design: The layout adapts to screen size, stacking sections on smaller devices.\
