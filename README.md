@@ -47,3 +47,4 @@ Project is created with:
 -Displaying Data: Weather information like temperature, weather description, wind speed, and humidity is displayed in a responsive layout.\
 ![Alt text](UIexamples/UI.png)
 -Responsive Design: The layout adapts to screen size, stacking sections on smaller devices.\
+![Alt text](UIexamples/UIresponsive.png)
