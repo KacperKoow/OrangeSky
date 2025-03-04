@@ -12,11 +12,11 @@ OrangeSky is a weather application that allows users to check the current weathe
 
 ## Installation
 
-Go to the [OpenWeatherMap website](https://openweathermap.org/).\
+Go to the [OpenWeatherMap](https://openweathermap.org/).\
 Create an account.\
 Under your username, you will find the "My API Keys" section. Go to it and then copy the key.\
 Create the path `src/environments` and then create the `environment.ts` file inside it.\
-In this file, paste the following code and replace 'YOUR_API_KEY_HERE' with your copied API key:\
+In this file, paste the following code and replace 'YOUR_API_KEY_HERE' with your copied API key:
 
 ```
 export const environment = {
