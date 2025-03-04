@@ -25,20 +25,20 @@ export const environment = {
 };
 ```
 
-Run the following command to install all necessary dependencies:
-$ npm install
-After the installation is complete, start the development server by running:
-$ npm start
+Run the following command to install all necessary dependencies:\
+`npm install`
+After the installation is complete, start the development server by running:\
+`npm start`
 
 ## Technologies
 
 Project is created with:
 
-- Angular version: 18.2.11\_
-- RxJS version: 7.5.0\_
-- TypeScript version: 4.8.4\_
+- Angular version: 18.2.11
+- RxJS version: 7.5.0
+- TypeScript version: 4.8.4
 - Node.js version: 16.9.1
-- npm version: 7.24.0\_
+- npm version: 7.24.0
 
 ## How it works
 
